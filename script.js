@@ -1,0 +1,2 @@
+let country = document.querySelector(".country").innerHTML = "Egypt";let hour = document.querySelector(".hour");let date = document.querySelector(".date");setInterval(update,1000);
+function update() {let clock = new Date();hour.innerHTML = clock.toLocaleTimeString();date.innerHTML = clock.toDateString().replaceAll(" ","/");document.title = date.innerHTML;}
